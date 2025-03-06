@@ -1,4 +1,4 @@
-# Configure le fournisseur AWS
+/*# Configure le fournisseur AWS
 provider "aws" {
   region     = "us-west-2"  # Remplacez par la région de votre choix
   access_key = var.aws_access_key
@@ -34,3 +34,5 @@ resource "aws_s3_bucket_public_access_block" "my_bucket_public_access" {
   ignore_public_acls      = true
   restrict_public_buckets = true
 }
+
+*/
