@@ -1,17 +1,16 @@
 variable "aws_access_key" {
   description = "AWS Access Key"
   type        = string
-  sensitive   = true  # Marque la variable comme sensible (Terraform la masquera dans les logs)
+  sensitive   = true
 }
 
 variable "aws_secret_key" {
   description = "AWS Secret Key"
   type        = string
-  sensitive   = true  # Marque la variable comme sensible
+  sensitive   = true
 }
 
-provider "aws" {
-  region     = "us-west-2"  # Remplacez par votre région AWS
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+variable "bucket_name" {
+  description = "Nom unique du bucket S3"
+  type        = string
 }
