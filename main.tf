@@ -4,6 +4,7 @@ provider "aws" {
   access_key = var.aws_access_key
   secret_key = var.aws_secret_key
 }
+*/
 
 # Crée un bucket S3
 resource "aws_s3_bucket" "my_bucket" {
@@ -15,7 +16,7 @@ resource "aws_s3_bucket" "my_bucket" {
     Environment = "Production"
   }
 }
-
+/*
 # Optionnel : Activer la versioning sur le bucket
 resource "aws_s3_bucket_versioning" "my_bucket_versioning" {
   bucket = aws_s3_bucket.my_bucket.id
