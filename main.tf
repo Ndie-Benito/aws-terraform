@@ -9,7 +9,7 @@ provider "aws" {
 # Crée un bucket S3
 resource "aws_s3_bucket" "my_bucket" {
   bucket = var.bucket_name  # Utilise la variable pour le nom du bucket
-  acl    = "private"       # Définit les permissions du bucket
+ 
 
   tags = {
     Name        = "MonBucket"
